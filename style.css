@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.side-left {
+  flex: 30%;
+}
+.input-form {
+  margin: 75px;
+  text-align: center;
+}
+
+.input-form h1 {
+  margin-bottom: 1em;
+  font-size: 50px;
+}
+
+.input-form p {
+  text-align: left;
+  color: rgb(148, 148, 148);
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-input {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.input-sm {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 5px 0px;
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  background-color: rgb(236, 236, 234);
+}
+
+.btn-submit {
+  width: 112%;
+  background-color: rgb(22, 141, 18);
+  padding: 14px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: rgb(19, 128, 16);
+}
+
+.side-right {
+  flex: 70%;
+  /* background-color: red; */
+  background-image: url(src/background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.display-result {
+  background-color: rgba(255, 255, 255, 0.89);
+  margin: 7em;
+  width: 50em;
+  border-radius: 10px;
+}
+
+.display-result h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-data {
+  background-color: rgba(255, 237, 70, 0.877);
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 2em;
+  border-radius: 6px;
+  padding: 20px 30px;
+}
+
+.card-data td {
+  padding: 5px;
+}
+
+.btn-close {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(248, 46, 46);
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+  margin-right: -40px;
+  margin-top: -28px;
+}
+
+.btn-close:hover {
+  background-color: rgb(240, 10, 10);
+}

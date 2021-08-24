@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>People Data</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="side-left">
+        <div class="input-form">
+          <h1>People Data</h1>
+          <p>Form input personal data</p>
+          <form id="form-input">
+            <div class="form-input">
+              <label for="input-name" class="label-input">Name</label>
+              <input type="text" name="input-name" id="input-name" class="input-sm" placeholder="Input your name"/>
+            </div>
+            <div class="form-input">
+              <label for="input-email" class="label-input">Email</label>
+              <input type="email" name="input-email" id="input-email" class="input-sm" placeholder="example@example.com"/>
+            </div>
+            <div class="form-input">
+              <label for="input-dob" class="label-input">Date of Bird</label>
+              <input type="date" name="input-dob" id="input-dob" class="input-sm"/>
+            </div>
+            <div class="form-input">
+              <label for="input-gender" class="label-input">Gender</label>
+              <select name="input-gender" id="input-gender" class="input-sm">
+                <option value="" selected>Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="form-input">
+              <label for="input-address" class="label-input">Address</label>
+              <textarea name="input-address" id="input-address" cols="20"rows="5" class="input-sm"></textarea>
+            </div>
+            <button type="button" id="btn-submit" class="btn-submit" onclick="addUser()">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="side-right">
+          <div class="display-result">
+              <h1>Display Result</h1>
+              <div id="display-data"></div>
+          </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
